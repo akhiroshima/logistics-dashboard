@@ -7,10 +7,13 @@
 
 [build.environment]
   # Node.js version for build
-  NODE_VERSION = "18"
+  NODE_VERSION = "18.17.0"
   
   # Optimize build performance
   NPM_FLAGS = "--prefer-offline --no-audit --progress=false"
+  
+  # CI environment
+  CI = "false"
 
 # SPA routing - redirect all routes to index.html for React Router
 [[redirects]]
